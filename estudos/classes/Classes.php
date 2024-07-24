@@ -10,7 +10,7 @@
         echo "Carro ligado";
     }
 
-    public function deslogar(){
+    public function desligar(){
         echo "Carro desligado";
     }
 
@@ -27,7 +27,7 @@
  $corsa->modelo = "Corsa";
  $corsa->marca = "Chevrolet";
  $corsa->chassi = "ABC123";
- $corsa->fabricate = "Chevrolet";
+ $corsa->fabricante = "Chevrolet";
  $corsa->ligar();
  $corsa->acelerar();
  $corsa->frear();

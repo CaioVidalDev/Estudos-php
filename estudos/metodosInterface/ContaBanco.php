@@ -8,7 +8,7 @@ class ContaBanco {
     private $saldo;
     private $status;
 
-    public function abriConta($tipo) {
+    public function abrirConta($tipo) {
         $this->setTipo($tipo);
         $this->setStatus(true);
         if($tipo == "CC"){
@@ -57,7 +57,7 @@ class ContaBanco {
             $v = 20;
         } 
 
-        if($this->getStatus){
+        if($this->getStatus()){
             $this->setSaldo($this->getSaldo() - $v);
             echo "Mensalidade de $v debitada na conta de " . $this->getDono() ;
         } else {
@@ -66,7 +66,7 @@ class ContaBanco {
     }
 
     public function ContaBanco(){
-        $this->setSalado(0);
+        $this->setSaldo(0);
         $this->setStatus(false);
         echo "Conta Criada com sucesso";
     }
@@ -92,7 +92,7 @@ class ContaBanco {
     }
 
     public function setDono($dono){
-        $this->tipo = $tipo;
+        $this->dono = $dono;
     }
 
     public function getSaldo(){
